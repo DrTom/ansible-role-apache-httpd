@@ -1,0 +1,7 @@
+# {{ansible_managed}}
+#
+ 
+enabled_modules: 
+{% for module in apache2_default_modules %}
+  - {{ module }}
+{% endfor %}
