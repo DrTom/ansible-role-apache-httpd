@@ -1,4 +1,4 @@
-apache2_default_modules: 
+apache_httpd_enabled_modules:
   - expires
   - headers
   - proxy
