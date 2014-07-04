@@ -18,6 +18,7 @@
 - name: Enable modules
   shell:  a2enmod {{item}}
   with_items: apache_httpd_enabled_modules
+  when: apache2_enabled_modules.changed
 
 - name: Restart
   service: name=apache2
