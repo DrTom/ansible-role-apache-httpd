@@ -5,3 +5,4 @@ apache_httpd_enabled_modules:
   - proxy_http
   - rewrite
   - ssl
+  - xsendfile
