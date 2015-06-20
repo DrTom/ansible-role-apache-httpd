@@ -1,8 +1,8 @@
 Ansible Apache2 Role
 =======================
 
-This role installs apache2 and enables a few frequently 
-required modules, see `defaults/main.yml`. 
+This role installs apache2 and enables a few frequently
+required modules, see `defaults/main.yml`.
 
 Example Usage
 -------------

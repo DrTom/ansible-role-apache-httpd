@@ -1,7 +1,7 @@
 - name: Install apache2
   apt: pkg={{item}} state=latest update_cache=yes cache_valid_time=3600
   register: apache2_install
-  with_items: 
+  with_items:
     - apache2
     - libapache2-mod-xsendfile
 
@@ -23,7 +23,7 @@
 - name: Restart
   service: name=apache2
            state=restarted
-  when: apache2_enabled_modules.changed 
-        or apache2_disable_default_site.changed 
+  when: apache2_enabled_modules.changed
+        or apache2_disable_default_site.changed
         or apache2_install.changed
 
