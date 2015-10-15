@@ -20,10 +20,3 @@
   with_items: apache_httpd_enabled_modules
   when: apache2_enabled_modules.changed
 
-- name: Restart
-  service: name=apache2
-           state=restarted
-  when: apache2_enabled_modules.changed
-        or apache2_disable_default_site.changed
-        or apache2_install.changed
-
